@@ -10,10 +10,10 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         int c = Integer.parseInt(st.nextToken());
-        if (b < a && a < c || c < a && c < b) {
+        if ((b < a && a < c) || (c < a && c < b)) {
             System.out.println(a);
         }
-        else if (a < b && b < c || c < b && b < a) {
+        else if ((a < b && b < c) || (c < b && b < a)) {
             System.out.println(b);
         }
         else {
